@@ -1,6 +1,6 @@
 
-NAME                    = "subsonic"
-PREFIX                  = "/music/subsonic"
+NAME                    = "mopidy"
+PREFIX                  = "/music/mopidy"
 CACHE_INTERVAL          = 10
 ART                     = "art-default.png"
 ICON                    = "icon-default.png"
@@ -16,7 +16,7 @@ import binascii
 
 @handler(PREFIX, NAME)
 def main():
-  dir = ObjectContainer(title1="Subsonic")
+  dir = ObjectContainer(title1="Mopidy")
   dir.add(DirectoryObject(title="Artists", key = PREFIX + '/getArtists'))
   #add preferences option
   dir.add(PrefsObject(title="Preferences"))
